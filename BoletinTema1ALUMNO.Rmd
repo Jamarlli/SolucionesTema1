@@ -159,12 +159,9 @@ qqPlot(log(Animals2$brain))
 
     ```{r}
 
-
-
-
-
-
-
+# a)
+libReturn <- library()
+str(libReturn)
 
 
 
