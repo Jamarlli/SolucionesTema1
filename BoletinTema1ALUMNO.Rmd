@@ -181,6 +181,17 @@ dim(libReturn$results)[1] # Tengo instaladas este número de librerias
     d.  Utiliza la función **summary**, sobre **cabbages** y **Chile** y observa como, además de otros estadísticos, también devuelve el número de valores perdidos de cada variable.
 
 ```{r}
+library(MASS)
+data(cabbages)
+
+# a)
+
+# Las tres primeras estapas son averiguar en número de registros, el número de variables y la clase de las variables
+
+dim(cabbages)[1] # Número de registros
+dim(cabbages)[2] # Número de variables
+colnames(cabbages) # Nombre de las variables
+
 
 
 ```
