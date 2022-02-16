@@ -192,6 +192,8 @@ dim(cabbages)[1] # Número de registros
 dim(cabbages)[2] # Número de variables
 colnames(cabbages) # Nombre de las variables
 
+# b)
+summary(is.na(cabbages)) # No hay ningún NA en ninguna de las variables de cabbages
 
 
 ```
