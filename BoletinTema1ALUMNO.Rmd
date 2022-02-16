@@ -93,7 +93,7 @@ c.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
 
 ```{r}
 library(MASS)
-data("mammals")
+data(mammals)
 dim(mammals)
 head(mammals)
 tail(mammals)
@@ -118,11 +118,7 @@ rownames(Animals2)
 d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos
 
 ```{r}
-
-commonAnimalsintersect
-
-
-
+commonAnimals <- intersect(Animals2, mammals)
 
 ```
 
@@ -130,10 +126,7 @@ e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. �
 
 ```{r}
 
-
-
-
-
+setdiff(Animals2, mammals)
 
 ```
 
