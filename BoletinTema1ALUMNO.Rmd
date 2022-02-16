@@ -195,6 +195,16 @@ colnames(cabbages) # Nombre de las variables
 # b)
 summary(is.na(cabbages)) # No hay ningún NA en ninguna de las variables de cabbages
 
+# c)
+library(car)
+data("Chile")
+dim(Chile)[1] # Número de registros
+dim(Chile)[2] # Número de variables
+colnames(Chile) # Nombre de las variables
+summary(is.na(Chile)) # Dentro del conjunto Chile, hay varios NA repartidos en 
+# varias variables: 1 en "sex", 11 en "education", 98 en "income", 17 en 
+# "statusquo" y 168 en "vote". 
+
 
 ```
 
