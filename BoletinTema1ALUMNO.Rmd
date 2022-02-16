@@ -213,10 +213,12 @@ summary(Chile)
 5.  Muchas pruebas estadísticas suponen que los datos siguen una distribución Gaussiana. Utiliza la aproximación visual proporcionada por **qqPlot** para determinar si podemos asumir que las variables **HeadWt** y **VitC** del conjunto **cabbages** verifican esta condición.
 
 ```{r}
-
-
-
-
+library(MASS)
+data(cabbages)
+qqPlot(cabbages$HeadWt)
+qqPlot(cabbages$VitC)
+# Con los graficos se demuestra que las variables "HeadWt" y "VitC" verifican la 
+# condicion de que los datos siguen una distribución Gaussiana
 
 ```
 
