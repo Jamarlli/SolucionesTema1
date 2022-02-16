@@ -272,20 +272,16 @@ b.  Repite el apartado anterior, pero obteniendo un modelo para cada una de las 
 
 ```{r}
 
+# a)
+plot(cabbages$VitC, cabbages$HeadWt)
+# b)
+Model1 <- lm(HeadWt ~ VitC, data = cabbages, subset = which(Cult == "c39"))
+Model2 <- lm(HeadWt ~ VitC, data = cabbages, subset = which(Cult == "c52"))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+plot(cabbages$VitC, cabbages$HeadWt, pch=c(6,16)[cabbages$Cult])
+legend(x="topright",legend=c("Cult = c39","Cult = c52"), pch=c(6,16))
+abline(Model1, lty=2)
+abline(Model2)
 
 ```
 
