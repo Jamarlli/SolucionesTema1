@@ -205,6 +205,9 @@ summary(is.na(Chile)) # Dentro del conjunto Chile, hay varios NA repartidos en
 # varias variables: 1 en "sex", 11 en "education", 98 en "income", 17 en 
 # "statusquo" y 168 en "vote". 
 
+# d)
+summary(cabbages)
+summary(Chile)
 
 ```
 
