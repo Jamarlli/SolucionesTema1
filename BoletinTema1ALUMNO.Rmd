@@ -167,6 +167,8 @@ str(libReturn)
 head(libReturn)
 libReturn$results[1:5]
 
+# c)
+dim(libReturn$results)[1] # Tengo instaladas este número de librerias
 
 
     ```
@@ -179,31 +181,6 @@ libReturn$results[1:5]
     d.  Utiliza la función **summary**, sobre **cabbages** y **Chile** y observa como, además de otros estadísticos, también devuelve el número de valores perdidos de cada variable.
 
 ```{r}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ```
